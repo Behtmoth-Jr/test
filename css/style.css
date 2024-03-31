@@ -1,0 +1,146 @@
+@font-face {
+    /* GolosTextWeb */
+    font-family: "GolosTextWeb"; 
+    src: url("../font/Golos-Text_Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+
+  @font-face {
+    /* GolosTextWebBold */
+    font-family: "GolosTextWebBold";
+    src: url("../font/Golos-Text_Bold.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    /* Merriweather */
+    font-family: "Merriweather"; 
+    src: url("../font/Merriweather-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+p {
+    font-family: "GolosTextWeb";
+}
+header{
+    background: url(../png/d49b12f28dde28847882a4abcd9cb75b.jpg);
+}
+.color-burn {
+    background-color: #E9DED4;
+    background-blend-mode: color-burn;
+}
+.header-logo {
+    display: flex;
+    margin-top: 28.31px;
+}
+.header-logo p {
+    font-weight: 700;
+    color: #595653;
+    font-size: 16.65px;
+    line-height: 17.98px;
+    margin-left: 5px;
+    font-family: "GolosTextWebBold";
+}
+.header-logo img{
+    margin-right: 1.73px;
+    height: 31.18px;
+    width: 21.65px;
+}
+.header-form h1{
+    font-family: "Merriweather";
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 400;
+    color: #313131;
+}
+.header-form {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 9.5em;
+}
+.form {
+    margin-top: 59px;
+    max-width: 50%;
+}
+.form-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+.form-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.4px;
+    max-width: 89%;
+}
+.header-btn {
+    display: flex;
+    justify-content: space-between;
+    max-width: 89%;    
+    margin-top: 39px;
+}
+.header-btn button {
+    display: flex;
+    justify-content: center;
+    background: none;
+    border: 2px solid #1F1F1F;
+    border-radius: 66px;
+    padding: 14px;
+    width: 48.7%;
+}
+.header-btn button:first-child {
+    background-color: #1F1F1F;
+}
+.header-btn button:first-child p {
+    color: #ffffff;
+}
+.header-btn p {
+    color: #1F1F1F;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.8px;
+    max-width: 73%;
+}
+.header-img {
+    position: absolute;
+    top: 15.3%;
+    right: 15.4%;
+}
+.header-circle{
+    position: absolute;
+    bottom: 16%;
+    right: 10.7%;
+    z-index: -1;
+}
+.header-circle p {
+    font-family: "Merriweather" ;
+    color: #efa917;
+    font-size: 16.24px;
+}
+.city {
+    position: relative;
+    z-index: 1;
+}
+.chess {
+    position: absolute;
+    bottom: 4%;
+    right: 11.4%;
+}
+.center {
+    align-self: self-start;
+    text-align: center;
+}
+.wrapper {
+    max-width: 1222px;
+    margin: auto;
+    display: flex;
+}
