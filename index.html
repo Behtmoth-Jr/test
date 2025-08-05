@@ -93,13 +93,35 @@
                         </p>
                     </div>
                 </div>
-                <form>
-
+                <form class="form">
+                    <div class="select-container" id="select-container">
+                        <div class="input select-container__title" id="select-title">Выберите тип системы</div>
+                        <div class="options">
+                            <div class="options__item">Sed ut perspiciatis</div>
+                            <div class="options__item">Nemo enim ipsam</div>
+                            <div class="options__item">Et harum quidem</div>
+                            <div class="options__item">Temporibus autem</div>
+                            <div class="options__item">Itaque earum rerum</div>
+                        </div>
+                    </div>
+                    <input type="email" name="mail" id="mail" class="input input--text" placeholder="Ваш e-mail">
+                    <input type="text" name="name" id="name" class="input input--text" placeholder="Ваше имя">
+                    <div class="range-container">
+                        <div class="range-container-text">
+                            <label for="range" class="range-container-text__info">
+                                Sed ut perspiciatis, unde omnis iste natus
+                            </label>
+                            <div class="range-container-text__info range-container-text__info--value">0%</div>
+                        </div>
+                        <input type="range" name="range" id="range" class="range" value="0">
+                    </div>
                 </form>
             </div>
         </section>
     </main>
     
+
+
     <footer class="footer">
         <div class="footer-container">
             <p class="footer-container__item footer-container__item--info">
@@ -138,4 +160,7 @@
         </div>
     </footer>
 </body>
+
+<script src="script/script..js"></script>
+
 </html>
