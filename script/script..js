@@ -1,6 +1,8 @@
 const container = document.getElementById('select-container');
 const title = document.getElementById('select-title');
 const options = container.querySelectorAll('.options__item');
+const rangeInput = document.getElementById('range');
+const valueDisplay = document.querySelector('.range-container-text__info--value');
 
 // Обработчик клика на заголовке
 title.addEventListener('click', () => {
@@ -25,3 +27,13 @@ if (!container.contains(e.target)) {
     container.classList.remove('open');
 }
 });
+
+// Обработчик изменения значения
+rangeInput.addEventListener('input', function() {
+// Обновляем отображаемое значение
+valueDisplay.textContent = this.value + '%';
+    
+});
+  
+// Инициализация значения при загрузке
+valueDisplay.textContent = rangeInput.value + '%';
