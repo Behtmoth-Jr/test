@@ -442,7 +442,7 @@ $background__footer: hsla(231, 13%, 28%, 1);
         width: 289px;
     }
 
-    &--text {
+    &__text {
         cursor: text;
         color: hsla(0, 0%, 0%, 1);
         background-color: hsl(0, 0%, 100%);
@@ -459,7 +459,7 @@ $background__footer: hsla(231, 13%, 28%, 1);
         }
     }
 
-    &--file {
+    &__file {
         background-color: hsla(0, 0%, 100%, 1);
         border: 2px solid $blue;
         text-align: center;
@@ -494,7 +494,7 @@ $background__footer: hsla(231, 13%, 28%, 1);
         }
     }
 
-    &--submit {
+    &__submit {
        background-color: $blue;
        color: hsla(0, 0%, 100%, 1);
        border: 1px solid hsla(0, 0%, 100%, 1);

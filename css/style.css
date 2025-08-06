@@ -476,43 +476,43 @@ a, button {
     width: 289px;
   }
 }
-.input--text {
+.input__text {
   cursor: text;
   color: hsl(0, 0%, 0%);
   background-color: hsl(0, 0%, 100%);
   font-size: 18px;
 }
 @media (max-width: 1023px) {
-  .input--text {
+  .input__text {
     margin-bottom: 10px;
   }
 }
-.input--text::-webkit-input-placeholder {
+.input__text::-webkit-input-placeholder {
   color: hsla(240, 13%, 18%, 0.62);
   font-size: 18px;
   font-family: "Lato-Regular";
 }
-.input--text::-moz-placeholder {
+.input__text::-moz-placeholder {
   color: hsla(240, 13%, 18%, 0.62);
   font-size: 18px;
   font-family: "Lato-Regular";
 }
-.input--text:-ms-input-placeholder {
+.input__text:-ms-input-placeholder {
   color: hsla(240, 13%, 18%, 0.62);
   font-size: 18px;
   font-family: "Lato-Regular";
 }
-.input--text::-ms-input-placeholder {
+.input__text::-ms-input-placeholder {
   color: hsla(240, 13%, 18%, 0.62);
   font-size: 18px;
   font-family: "Lato-Regular";
 }
-.input--text::placeholder {
+.input__text::placeholder {
   color: hsla(240, 13%, 18%, 0.62);
   font-size: 18px;
   font-family: "Lato-Regular";
 }
-.input--file {
+.input__file {
   background-color: hsl(0, 0%, 100%);
   border: 2px solid hsl(204, 69%, 55%);
   text-align: center;
@@ -530,24 +530,24 @@ a, button {
           justify-content: center;
   margin-top: 31px;
 }
-.input--file .white {
+.input__file .white {
   display: none;
 }
-.input--file img {
+.input__file img {
   margin-right: 10px;
 }
-.input--file:hover {
+.input__file:hover {
   background-color: hsl(204, 53.64%, 32.38%);
   border: 3px solid hsl(204, 54%, 18%);
   color: hsl(0, 0%, 100%);
 }
-.input--file:hover .black {
+.input__file:hover .black {
   display: none;
 }
-.input--file:hover .white {
+.input__file:hover .white {
   display: block;
 }
-.input--submit {
+.input__submit {
   background-color: hsl(204, 69%, 55%);
   color: hsl(0, 0%, 100%);
   border: 1px solid hsl(0, 0%, 100%);
@@ -555,7 +555,7 @@ a, button {
   font-weight: 600;
   margin-top: 53px;
 }
-.input--submit:hover {
+.input__submit:hover {
   background-color: hsl(204, 53.64%, 32.38%);
   border: 3px solid hsl(204, 54%, 18%);
 }
