@@ -1,0 +1,12 @@
+.about-description-list {
+  padding-left: 16px;
+}
+.about-description-list__item {
+  margin-bottom: 8px;
+  padding-left: 8px;
+  font-size: 20px;
+  line-height: 21px;
+}
+.about-description-list__item::marker {
+  content: "-";
+}

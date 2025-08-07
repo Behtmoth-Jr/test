@@ -1,0 +1,58 @@
+.purchase {
+  height: 909px;
+  padding: 119px 15px;
+  background-color: $background_2;
+  background-image: url(../img/bacground_section2.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -52px;
+  background-position-x: -1px;
+
+  @media (max-width: 1023px) {
+    height: auto;
+  }
+
+  p {
+    color: Hsla(0deg, 0%, 73%, 1);
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1192px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__info {
+    margin-bottom: 80px;
+
+    @media (max-width: 1023px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__steps {
+    margin-bottom: 87px;
+
+    @media (max-width: 1023px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.purchase-info {
+  &__title {
+    margin-bottom: 33px;
+    color: Hsla(0deg, 0%, 100%, 1);
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 19px;
+  }
+}

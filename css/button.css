@@ -1,0 +1,73 @@
+.button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 1023px) {
+  .button-wrapper {
+    width: 100%;
+  }
+}
+.button-wrapper__btn {
+  margin-right: 31px;
+}
+.button-wrapper__btn:last-child {
+  margin-right: 0;
+}
+
+.button {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12.5px 0;
+  border-radius: 3px;
+  color: Hsla(0deg, 0%, 100%, 1);
+}
+@media (max-width: 1023px) {
+  .button {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.button--blue {
+  border: 1px solid Hsla(0deg, 0%, 100%, 1);
+  background: Hsla(204deg, 69%, 55%, 1);
+}
+.button--white {
+  border: 1px solid Hsla(249deg, 6%, 45%, 1);
+  background: Hsla(0deg, 0%, 100%, 1);
+  color: Hsla(230deg, 7%, 18%, 1);
+}
+.button--white:hover {
+  color: Hsla(0deg, 0%, 100%, 1);
+}
+.button--s {
+  width: 100%;
+  max-width: 181px;
+  font-size: 13px;
+  line-height: 16px;
+}
+@media (max-width: 1023px) {
+  .button--s {
+    max-width: 129px;
+  }
+}
+.button--block {
+  width: 100%;
+}
+.button--bold {
+  font-weight: 600;
+}
+.button:hover {
+  background: Hsl(204deg 53.64% 32.38%);
+}
+.button:active {
+  background: Hsl(204deg 52.63% 20.73%);
+}

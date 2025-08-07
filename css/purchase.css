@@ -1,0 +1,61 @@
+.purchase {
+  height: 909px;
+  padding: 119px 15px;
+  background-color: Hsla(240deg, 13%, 18%, 1);
+  background-image: url(../img/bacground_section2.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -52px;
+  background-position-x: -1px;
+}
+@media (max-width: 1023px) {
+  .purchase {
+    height: auto;
+  }
+}
+.purchase p {
+  color: Hsla(0deg, 0%, 73%, 1);
+}
+.purchase__container {
+  width: 100%;
+  max-width: 1192px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.purchase__info {
+  margin-bottom: 80px;
+}
+@media (max-width: 1023px) {
+  .purchase__info {
+    margin-bottom: 40px;
+  }
+}
+.purchase__steps {
+  margin-bottom: 87px;
+}
+@media (max-width: 1023px) {
+  .purchase__steps {
+    margin-bottom: 40px;
+  }
+}
+
+.purchase-info__title {
+  margin-bottom: 33px;
+  color: Hsla(0deg, 0%, 100%, 1);
+  text-align: center;
+}
+.purchase-info__text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 19px;
+}

@@ -1,0 +1,72 @@
+.button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12.5px 0;
+  border-radius: 3px;
+  color: Hsla(0deg, 0%, 100%, 1);
+
+  @media (max-width: 1023px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &--blue {
+    border: 1px solid Hsla(0deg, 0%, 100%, 1);
+    background: $blue;
+  }
+
+  &--white {
+    border: 1px solid Hsla(249deg, 6%, 45%, 1);
+    background: Hsla(0deg, 0%, 100%, 1);
+    color: Hsla(230deg, 7%, 18%, 1);
+
+    &:hover {
+      color: Hsla(0deg, 0%, 100%, 1);
+    }
+  }
+
+  &--s {
+    width: 100%;
+    max-width: 181px;
+    font-size: 13px;
+    line-height: 16px;
+
+    @media (max-width: 1023px) {
+      max-width: 129px;
+    }
+  }
+
+  &--block {
+    width: 100%;
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &:hover {
+    background: $button__hover;
+  }
+
+  &:active {
+    background: Hsl(204deg 52.63% 20.73%);
+  }
+}
+
+.button-wrapper {
+  display: flex;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
+
+  &__btn {
+    margin-right: 31px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

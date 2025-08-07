@@ -1,0 +1,100 @@
+.steps {
+  z-index: 20;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 1023px) {
+  .steps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.steps__item {
+  width: 20%;
+}
+@media (max-width: 1023px) {
+  .steps__item {
+    width: 70%;
+    margin-bottom: 13px;
+  }
+}
+
+.steps-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.steps-item__img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 29px;
+  overflow: visible;
+  border: 5px solid Hsla(204deg, 57%, 36%, 1);
+  border-radius: 50%;
+  background: Hsla(204deg, 69%, 55%, 1);
+}
+@media (max-width: 1023px) {
+  .steps-item__img {
+    width: 77px;
+    height: 77px;
+    margin-bottom: 10px;
+  }
+}
+.steps-item__info {
+  padding: 0 24px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 17px;
+}
+.steps-item::before, .steps-item::after {
+  position: absolute;
+  top: 47px;
+  z-index: 10;
+  width: 30%;
+  height: 6px;
+  content: "";
+  display: block;
+  background-image: url(../img/marker.png);
+}
+@media (max-width: 1023px) {
+  .steps-item::before, .steps-item::after {
+    display: none;
+  }
+}
+.steps-item:first-child::before {
+  display: none;
+}
+.steps-item:last-child::after {
+  display: none;
+}
+.steps-item::before {
+  left: -13px;
+}
+.steps-item::after {
+  right: -7px;
+}
