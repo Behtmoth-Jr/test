@@ -9,9 +9,11 @@
 <body>
     <header class="header">
         <div class="header__container">
+
             <a href="#" class="header__title">
                 LOREMIPSUM.<span class="label">NET</span>
             </a>
+
             <nav class="nav">
                 <a href="#" class="nav__link">
                     БИЗНЕС
@@ -29,110 +31,152 @@
         </div>
     </header>
 
-    <main class="main">
+    <main >
         <section class="about">
             <div class="about__container">
                 <h1 class="title title--large about__title">
                     <span class="label">LOREM IPSUM </span>DOLOR SIT AMETCONSECTETUR <span class="label">ADIPISCING</span>
                 </h1>
-                <div class="about__description">
-                    <p class="about__text">
+                <div class="about__description about-description">
+                    <p class="about-description__text">
                         At vero eos et accusamus et iusto odio dignissimos ducimus!
                     </p>
-                    <ul class="about-list">
-                        <li class="about-list__item">Totam rem aperiam eaque ipsa</li>
-                        <li class="about-list__item">Sit voluptatem accusantium doloremque laudantium</li>
-                        <li class="about-list__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                    <ul class="about-description-list">
+                        <li class="about-description-list__item">Totam rem aperiam eaque ipsa</li>
+                        <li class="about-description-list__item">Sit voluptatem accusantium doloremque laudantium</li>
+                        <li class="about-description-list__item">Sed ut perspiciatis, unde omnis iste natus error</li>
                     </ul>
                 </div>
-                <div class="about-buttons">
-                    <a href="#" class="button button--s button--blue about-buttons__btn">
+
+                <div class="button-wrapper">
+                    <a href="#" class="button button--s button--blue button-wrapper__btn">
                         ЗАКАЗАТЬ
                     </a>
-                    <a class="button button--s button--white about-buttons__btn">
+                    <a class="button button--s button--white button-wrapper__btn">
                         ПОДРОБНЕЕ
                     </a>
-                </dive>
+                </div>
             </div>
         </section>
+
         <section class="purchase">
+
             <div class="purchase__container">
-                <div class="purchase-info">
+
+                <div class="purchase__info purchase-info">
                     <h2 class="title title--small purchase-info__title">ОФОРМЛЕНИЕ <span class="label">ЗАКАЗА</span></h2>
                     <p class="purchase-info__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
                 </div>
-                <div class="steps">
-                    <div class="steps-item">
-                        <img src="img/search.png" alt="" class="steps-item__img">
+
+                <div class="purchase__steps steps">
+                    <div class="steps__item steps-item">
+                        <div class="steps-item__img">
+                            <img src="img/search.png" alt="">
+                        </div>
                         <p class="steps-item__info">
                             Lorem ipsum dolor sit amet
                         </p>
                     </div>
-                    <div class="steps-item">
-                        <img src="img/percent.png" alt="" class="steps-item__img">
+                    <div class="steps__item steps-item">
+                        <div class="steps-item__img">
+                            <img src="img/percent.png" alt="">
+                        </div>
                         <p class="steps-item__info">
                             Сonsecteturadipiscing elit
                         </p>
                     </div>
-                    <div class="steps-item">
-                        <img src="img/file.png" alt="" class="steps-item__img">
+                    <div class="steps__item steps-item">
+                        <div class="steps-item__img">
+                            <img src="img/file.png" alt="">
+                        </div>
                         <p class="steps-item__info">
                             Sed do eiusmod tempor
                         </p>
                     </div>
-                    <div class="steps-item">
-                        <img src="img/mail.png" class="steps-item__img">
+                    <div class="steps__item steps-item">
+                        <div class="steps-item__img">
+                            <img src="img/mail.png" alt="">
+                        </div>
                         <p class="steps-item__info">
                             Esse cillum dolore eu fugiat
                         </p>
                     </div>
-                    <div class="steps-item">
-                        <img src="img/money.png" alt="" class="steps-item__img">
+                    <div class="steps__item steps-item">
+                        <div class="steps-item__img">
+                            <img src="img/money.png" alt="">
+                        </div>
                         <p class="steps-item__info">
                             Excepteur sint occaecat cupidatat non proident
                         </p>
                     </div>
                 </div>
+
                 <form class="form">
-                    <div class="select-container" id="select-container">
-                        <div class="input select-container__title" id="select-title">Выберите тип системы</div>
-                        <div class="options">
-                            <div class="options__item">Sed ut perspiciatis</div>
-                            <div class="options__item">Nemo enim ipsam</div>
-                            <div class="options__item">Et harum quidem</div>
-                            <div class="options__item">Temporibus autem</div>
-                            <div class="options__item">Itaque earum rerum</div>
+                    <div class="select form__item" id="select">
+                        <div class="select__title" id="select-title">Выберите тип системы</div>
+                        <div class="select-options">
+                            <div class="select-options__item">Sed ut perspiciatis</div>
+                            <div class="select-options__item">Nemo enim ipsam</div>
+                            <div class="select-options__item">Et harum quidem</div>
+                            <div class="select-options__item">Temporibus autem</div>
+                            <div class="select-options__item">Itaque earum rerum</div>
                         </div>
                     </div>
-                    <input type="email" name="mail" id="mail" class="input input__text" placeholder="Ваш e-mail">
-                    <input type="text" name="name" id="name" class="input input__text" placeholder="Ваше имя">
-                    <div class="range-container">
-                        <div class="range-container-text">
-                            <label for="range" class="range-container-text__info">
+
+                    <div class="form__item">
+                        <input type="email" name="mail" id="mail" class="input input-text" placeholder="Ваш e-mail">
+                    </div>
+
+                    <div class="form__item">
+                        <input type="text" name="name" id="name" class="input input-text" placeholder="Ваше имя">
+                    </div>
+                    
+                    <div class="range-container form__range">
+                        <div class="range-container__text">
+                            <label for="range" class="range-container__label">
                                 Sed ut perspiciatis, unde omnis iste natus
                             </label>
-                            <div class="range-container-text__info range-container-text__info--value">0%</div>
+                            <div class="range-container__info range-container__info--value">0%</div>
                         </div>
-                        <input type="range" name="range" id="range" class="range" value="0">
+                        <input type="range" name="range" id="range" class="range-container-input range-container__input" value="0">
                     </div>
-                    <label for="file" class="input input__file">
-                        <img src="img/doc.png" class="black">
-                        <img src="img/doc_white.png" class="white">
-                        ПРИКРЕПИТЬ ФАЙЛ
-                    </label>
-                    <input type="file" name="file" id="file" class="file">
-                    <input type="submit" value="ОТПРАВИТЬ" name="submit" class="input input__submit">
+
+                    <div class="form__item">
+                        <label for="file" class="input input-file">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 21" class="input-file__ico">
+                                <path d="m16.81 4.6-3.48-3.47A3 3 0 0 0 11.5.37h-10C.9.37.43.85.43
+                                 1.44V19.3c0 .59.48 1.07 1.07 1.07h15c.6 0 1.07-.48 1.07-1.07V6.44a3
+                                 3 0 0 0-.76-1.83ZM11.86 1.9c.19.06.38.16.45.24l3.5
+                                 3.5c.08.07.18.26.24.45h-4.2v-4.2Zm4.28 17.05H1.86V1.8h8.57v4.64c0
+                                 .6.48 1.07 1.07 1.07h4.64v11.43ZM4.71 9.3V10c0 .2.16.36.36.36h7.86c.2 0
+                                 .36-.16.36-.36V9.3c0-.2-.16-.36-.36-.36H5.07c-.2 0-.36.16-.36.36Zm8.22 2.5H5.07c-.2
+                                 0-.36.15-.36.35v.72c0 .2.16.36.36.36h7.86c.2 0
+                                 .36-.16.36-.36v-.72c0-.2-.16-.35-.36-.35Zm0 2.85H5.07c-.2 0-.36.16-.36.36v.72c0
+                                 .2.16.35.36.35h7.86c.2 0 .36-.15.36-.35V15c0-.2-.16-.36-.36-.36Z"/>
+                            </svg>
+                            ПРИКРЕПИТЬ ФАЙЛ
+                        </label>
+                        <input type="file" name="file" id="file" class="file">
+                    </div>
+                    
+                    <div class="form__item form__button-wrapper">
+                        <button type="submit" value="ОТПРАВИТЬ" name="submit" class="button button--bold button--block button--blue input-submit">ОТПРАВИТЬ</button>
+                    </div>  
                 </form>
             </div>
         </section>
     </main>
-    
+
     <footer class="footer">
-        <div class="footer-container">
-            <p class="footer-container__item footer-container__item--info">
-                © 2018 «LOREMIPSUM.NET» Все права защищены.
-            </p>
-            <div class="footer-container__item footer-container__item--payment">
+        <div class="footer__container footer-container">
+
+            <div class="footer-container__item">
+                <p class="footer-container__info">
+                    © 2018 «LOREMIPSUM.NET» Все права защищены.
+                </p>
+            </div>
+
+            <div class="footer-container__item footer-container__pay">
                 <div class="payment">
                     <img src="img/qiwi.png" alt="" class="payment__img">
                     <p class="payment__info">
@@ -152,13 +196,18 @@
                     </p>
                 </div>
             </div>
+
             <div class="footer-container__item">
-                <a href="#" class="social">
-                    <img src="img/envelope.png" alt="" class="social__item">
+                <a href="#" class="social footer__social">
+                    <div class="social__item">
+                        <img src="img/envelope.png" alt="" >
+                    </div>
                     info@ipsum228.com
                 </a>
-                <a href="#" class="social">
-                    <img src="img/vk.png" alt="" class="social__item">
+                <a href="#" class="social footer__social">
+                    <div class="social__item">
+                        <img src="img/vk.png" alt="">
+                    </div>
                     Мы вконтакте
                 </a>
             </div>

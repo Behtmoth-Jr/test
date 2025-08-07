@@ -1,14 +1,16 @@
-const container = document.getElementById('select-container');
+const container = document.getElementById('select');
 const title = document.getElementById('select-title');
-const options = container.querySelectorAll('.options__item');
+const options = container.querySelectorAll('.select-options__item');
+
+
 const rangeInput = document.getElementById('range');
-const valueDisplay = document.querySelector('.range-container-text__info--value');
+const valueDisplay = document.querySelector('.range-container__info--value');
 
 // Обработчик клика на заголовке
 title.addEventListener('click', () => {
-    container.classList.toggle('open');
-    if (container.classList.contains('open')) {
-        title.classList.remove('selected');
+    container.classList.toggle('select--open');
+    if (container.classList.contains('select--open')) {
+        title.classList.remove('select--selected');
   }
 });
 
@@ -16,15 +18,15 @@ title.addEventListener('click', () => {
 options.forEach(item => {
 item.addEventListener('click', () => {
     title.textContent = item.textContent;
-    title.classList.add('selected');
-    container.classList.remove('open');
+    title.classList.add('select--selected');
+    container.classList.remove('select--open');
 });
 });
 
 // Закрытие при клике вне области
 document.addEventListener('click', e => {
 if (!container.contains(e.target)) {
-    container.classList.remove('open');
+    container.classList.remove('select--open');
 }
 });
 
