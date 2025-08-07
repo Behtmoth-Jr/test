@@ -37,10 +37,6 @@ a {
     text-decoration: none;
     color: hsla(0, 0%, 100%, 1);
 
-    &:hover {
-        color: $blue;
-    }
-
     &:active {
         color: hsl(204, 62.7%, 32.52%);
     }
@@ -108,6 +104,10 @@ a, button, input {
         font-weight: 600;
         font-size: 13px;
         line-height: 14px;
+
+        &:hover {
+            color: $blue;
+        }
 
         @media (max-width: 1023px) {
             margin-right: 0;
@@ -222,6 +222,10 @@ a, button, input {
 .button-wrapper {
     display: flex;
 
+    @media (max-width: 1023px) {
+        width: 100%;
+    }
+
     &__btn {
         margin-right: 31px;
 
@@ -304,6 +308,7 @@ a, button, input {
         @media (max-width: 1023px) {
         font-size: 25px;
         text-align: center;
+        line-height: 32px;
     }
     }
 
@@ -323,8 +328,6 @@ a, button, input {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-
-    //TODO не очень мне нравится 4 строчки снизу, но хуй с ним пока
     height: 909px;
     background-position-y: -52px;
     background-position-x: -1px;
@@ -486,6 +489,7 @@ a, button, input {
     }
 
     &__item {
+        max-width: 100%;
         width: 369px;
         margin-bottom: 27px;
 
@@ -496,8 +500,8 @@ a, button, input {
 
     &__range {
         @media (max-width: 1023px) {
-            max-width: 369px;
-            width: 100%;
+            max-width: 100%;
+            width: 369px;
             margin-bottom: 16px;
         }
     }
@@ -534,8 +538,6 @@ a, button, input {
         border: 2px solid transparent;
         border-radius: 3px;
         
-        
-
         &::after {
             content: "";
             background-image: url(../img/arrow.png);
@@ -709,6 +711,7 @@ a, button, input {
 
         @media (max-width: 1207px) {
             width: 369px;
+            max-width: 100%;
     }
 
     }
@@ -766,7 +769,6 @@ a, button, input {
 
     @media (max-width: 1023px) {
         flex-direction: column;
-        padding: 20px 0;
     }
 
     &__info {
@@ -776,6 +778,13 @@ a, button, input {
 
         @media (max-width: 1023px) {
             font-size: 12px;
+        }
+    }
+    
+    &__copyright {
+
+        @media (max-width: 1023px) {
+            order: 2;
         }
     }
 
@@ -805,6 +814,11 @@ a, button, input {
         border-left: 1px solid hsl(0, 0%, 76%);
         border-right: 1px solid hsl(0, 0%, 76%);
         padding: 0px 40px;
+
+        @media (max-width: 1023px) {
+            border-left: 0;
+            border-right: 0;
+        }
     }
 }
 
