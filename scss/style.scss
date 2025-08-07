@@ -177,6 +177,10 @@ a, button, input {
          }
     }
 
+    &__description {
+        margin-bottom: 72px;
+    }
+
     &__title {
         max-width: 65%;
         margin-bottom: 93px;
@@ -190,7 +194,6 @@ a, button, input {
 }
 
 .about-description {
-    margin-bottom: 72px;
     
     @media (max-width: 1023px) {
         margin-bottom: 30px;
@@ -246,6 +249,7 @@ a, button, input {
 
     @media (max-width: 1023px) {
         font-size: 12px;
+        line-height: 14px;
     }
 
     &--blue {
@@ -318,6 +322,7 @@ a, button, input {
 
         @media (max-width: 1023px) {
             font-size: 25px;
+            line-height: 28px;
         }
     }
 }
@@ -389,8 +394,11 @@ a, button, input {
     z-index: 20;
 
     &__item {
+        width: 20%;
+        
         @media (max-width: 1023px) {
             margin-bottom: 13px;
+            width: 70%;
         }
     }
 
@@ -404,12 +412,7 @@ a, button, input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20%;
     position: relative;
-
-    @media (max-width: 1023px) {
-        width: 70%;
-    }
 
     &__img {
         background: hsla(204, 69%, 55%, 1);
